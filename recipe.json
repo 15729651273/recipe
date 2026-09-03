@@ -1,10 +1,11 @@
 [
     {
-        "title":"番茄炒蛋",
-        "category":"家常菜",
-        "desc":"国民下饭菜，简单好做",
-        "ingredients":["番茄2个","鸡蛋3个","盐","白糖一勺","食用油"],
-        "steps":[
+        "title": "番茄炒蛋",
+        "category": "家常菜",
+        "desc": "国民下饭菜，简单好做",
+        "cover": "https://em-content.zobj.net/thumbs/120/apple/354/fried-egg_1f373.png",
+        "ingredients": ["番茄2个", "鸡蛋3个", "盐", "白糖一勺", "食用油"],
+        "steps": [
             "番茄切块，鸡蛋加少许盐打散",
             "热锅倒油，鸡蛋炒熟盛出备用",
             "锅中放少许油，下番茄翻炒出沙出汁",
@@ -12,15 +13,129 @@
         ]
     },
     {
-        "title":"酸辣土豆丝",
-        "category":"家常菜",
-        "desc":"五分钟快手菜",
-        "ingredients":["土豆2个","蒜","干辣椒","香醋","盐"],
-        "steps":[
+        "title": "酸辣土豆丝",
+        "category": "家常菜",
+        "desc": "五分钟快手菜",
+        "cover": "https://em-content.zobj.net/thumbs/120/apple/354/potato_1f954.png",
+        "ingredients": ["土豆2个", "蒜", "干辣椒", "香醋", "盐"],
+        "steps": [
             "土豆切丝清水冲洗淀粉",
             "蒜切片，辣椒切段",
             "大火热油爆香辅料，下入土豆丝快炒",
             "沿锅边淋醋，加盐翻炒几十秒出锅"
+        ]
+    },
+    {
+        "title": "红烧肉",
+        "category": "家常菜",
+        "desc": "肥而不腻，入口即化",
+        "cover": "https://em-content.zobj.net/thumbs/120/apple/354/meat-on-bone_1f357.png",
+        "ingredients": ["五花肉500g", "姜3片", "葱1根", "八角2个", "生抽", "老抽", "冰糖", "料酒"],
+        "steps": [
+            "五花肉切块，冷水下锅焯水后捞出洗净",
+            "锅中放少许油，下入冰糖炒出糖色",
+            "倒入肉块翻炒上色，加入葱姜、八角、料酒、生抽、老抽",
+            "加入热水没过肉块，小火炖煮60分钟，大火收汁即可"
+        ]
+    },
+    {
+        "title": "麻婆豆腐",
+        "category": "家常菜",
+        "desc": "麻辣鲜香，下饭神器",
+        "cover": "https://em-content.zobj.net/thumbs/120/apple/354/tofu_1f96b.png",
+        "ingredients": ["嫩豆腐1块", "肉末100g", "郫县豆瓣酱", "蒜末", "生抽", "淀粉", "花椒粉"],
+        "steps": [
+            "豆腐切小块，放入淡盐水中浸泡",
+            "热锅倒油，炒香肉末和蒜末",
+            "加入郫县豆瓣酱炒出红油",
+            "倒入豆腐块，加生抽调味，水淀粉勾芡，出锅撒花椒粉"
+        ]
+    },
+    {
+        "title": "清炒时蔬",
+        "category": "家常菜",
+        "desc": "清爽解腻，简单健康",
+        "cover": "https://em-content.zobj.net/thumbs/120/apple/354/green-salad_1f957.png",
+        "ingredients": ["青菜一把", "蒜2瓣", "盐", "食用油"],
+        "steps": [
+            "青菜洗净切段，蒜切片",
+            "热锅倒油，下蒜片爆香",
+            "加入青菜大火快炒至变软",
+            "加盐调味，翻炒均匀即可出锅"
+        ]
+    },
+    {
+        "title": "紫菜蛋花汤",
+        "category": "汤品",
+        "desc": "清淡鲜美的快手汤",
+        "cover": "https://em-content.zobj.net/thumbs/120/apple/354/bowl-with-spoon_1f963.png",
+        "ingredients": ["紫菜", "鸡蛋1个", "葱花", "盐", "香油"],
+        "steps": [
+            "锅中烧水至沸腾",
+            "放入紫菜，鸡蛋打散缓缓淋入锅中",
+            "加盐调味，关火滴香油撒葱花"
+        ]
+    },
+    {
+        "title": "番茄鸡蛋汤",
+        "category": "汤品",
+        "desc": "酸甜开胃，老少皆宜",
+        "cover": "https://em-content.zobj.net/thumbs/120/apple/354/tomato_1f345.png",
+        "ingredients": ["番茄1个", "鸡蛋1个", "葱花", "盐", "香油"],
+        "steps": [
+            "番茄切块，鸡蛋打散",
+            "锅中烧水，放入番茄煮出汤汁",
+            "淋入蛋液，轻轻搅拌成蛋花",
+            "加盐调味，出锅前滴香油撒葱花"
+        ]
+    },
+    {
+        "title": "冬瓜丸子汤",
+        "category": "汤品",
+        "desc": "清淡暖胃，汤鲜味美",
+        "cover": "https://em-content.zobj.net/thumbs/120/apple/354/canned-food_1f96b.png",
+        "ingredients": ["冬瓜200g", "猪肉丸子150g", "姜2片", "葱花", "盐"],
+        "steps": [
+            "冬瓜去皮切片，丸子解冻备用",
+            "锅中烧水，放入姜片和丸子煮至浮起",
+            "加入冬瓜片继续煮至透明",
+            "加盐调味，撒葱花即可"
+        ]
+    },
+    {
+        "title": "凉拌黄瓜",
+        "category": "凉拌",
+        "desc": "解腻开胃小菜",
+        "cover": "https://em-content.zobj.net/thumbs/120/apple/354/cucumber_1f952.png",
+        "ingredients": ["黄瓜2根", "蒜末", "生抽", "香醋", "香油"],
+        "steps": [
+            "黄瓜拍碎切段",
+            "加入蒜末、生抽、香醋、香油",
+            "充分拌匀，静置几分钟即可食用"
+        ]
+    },
+    {
+        "title": "凉拌木耳",
+        "category": "凉拌",
+        "desc": "爽脆可口，低脂小菜",
+        "cover": "https://em-content.zobj.net/thumbs/120/apple/354/mushroom_1f344.png",
+        "ingredients": ["干木耳一把", "蒜末", "小米辣", "生抽", "香醋", "香油", "香菜"],
+        "steps": [
+            "木耳泡发后撕成小朵，焯水捞出过凉",
+            "加入蒜末、小米辣、生抽、香醋、香油",
+            "拌匀后撒香菜，静置十分钟味道更佳"
+        ]
+    },
+    {
+        "title": "凉拌西红柿",
+        "category": "凉拌",
+        "desc": "酸甜爽口，简单易做",
+        "cover": "https://em-content.zobj.net/thumbs/120/apple/354/tomato_1f345.png",
+        "ingredients": ["番茄2个", "白糖适量"],
+        "steps": [
+            "番茄洗净切成小块",
+            "放入碗中，撒上白糖",
+            "冷藏十分钟后食用口感更佳"
         ]
     }
 ]
