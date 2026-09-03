@@ -12,49 +12,49 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
         }
         body {
-            background-color: #f7f7f7;
+            background-color: #f5f5f5;
             color: #333;
-            padding-bottom: 80px;
         }
         header {
             background: #ff6b35;
             color: #fff;
-            padding: 16px;
+            padding: 18px 16px;
             position: sticky;
             top: 0;
             z-index: 99;
             display:flex;
             justify-content:space-between;
             align-items:center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.12);
         }
         header h1 {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 600;
         }
-        #addBtn{
-            background:#fff;
+        #resetBtn{
+            background:#ffffff;
             color:#ff6b35;
             border:none;
-            padding:6px 10px;
-            border-radius:6px;
-            font-size:14px;
+            padding:7px 10px;
+            border-radius:8px;
+            font-size:13px;
         }
         .search-box {
-            margin: 12px 16px;
+            margin: 16px;
         }
         .search-box input {
             width: 100%;
-            padding: 12px 14px;
-            border-radius: 8px;
+            padding: 13px 16px;
+            border-radius: 12px;
             border: none;
             font-size: 15px;
             background: #fff;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
         }
         .tags-wrap {
             display: flex;
-            gap: 10px;
-            padding: 0 16px 12px;
+            gap: 12px;
+            padding: 0 16px 16px;
             overflow-x: auto;
         }
         .tags-wrap::-webkit-scrollbar {
@@ -62,62 +62,68 @@
         }
         .tag-item {
             white-space: nowrap;
-            padding: 6px 14px;
+            padding: 8px 16px;
             background: #ffffff;
-            border-radius: 20px;
+            border-radius: 24px;
             font-size: 14px;
             flex-shrink: 0;
+            box-shadow:0 1px 3px rgba(0,0,0,0.06);
         }
         .tag-item.active {
             background-color: #ff6b35;
             color: white;
         }
         .recipe-list {
-            padding: 0 16px;
+            padding: 0 16px 30px;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap:14px;
+            gap:16px;
         }
         .recipe-card {
             background: #fff;
-            border-radius: 12px;
+            border-radius: 14px;
             overflow: hidden;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
         }
         .card-img {
-            height: 130px;
+            height: 140px;
             background-color: #ffdfcc;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            font-size:40px;
+            overflow: hidden;
+        }
+        .card-img img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
         }
         .card-body {
-            padding:10px;
+            padding:12px;
         }
         .card-title {
-            font-size:15px;
-            font-weight:500;
-            margin-bottom:4px;
+            font-size:16px;
+            font-weight:600;
+            margin-bottom:5px;
         }
         .card-desc {
-            font-size:12px;
-            color:#777;
+            font-size:13px;
+            color:#757575;
+            line-height:1.4;
         }
         .empty-tip{
             text-align:center;
-            padding:40px;
+            padding:60px 20px;
             color:#999;
+            font-size:15px;
         }
         .loading{
             text-align:center;
-            padding:30px;
+            padding:40px;
+            color:#888;
         }
         /* 弹窗通用 */
         .mask {
             position:fixed;
             inset:0;
-            background:rgba(0,0,0,0.5);
+            background:rgba(0,0,0,0.55);
             display:none;
             z-index:100;
         }
@@ -127,84 +133,43 @@
             left:0;
             right:0;
             background:#fff;
-            border-radius:16px 16px 0 0;
-            max-height:85vh;
+            border-radius:20px 20px 0 0;
+            max-height:88vh;
             overflow-y:auto;
-            padding:20px;
+            padding:24px;
         }
         .popup-close {
             position:absolute;
-            top:14px;
-            right:16px;
-            font-size:22px;
+            top:16px;
+            right:20px;
+            font-size:26px;
             border:none;
             background:none;
+            color:#666;
         }
         .detail-title {
-            font-size:20px;
+            font-size:22px;
             font-weight:600;
-            margin-bottom:10px;
-        }
-        .section-title {
-            font-size:16px;
-            margin:16px 0 8px;
-            color:#ff6b35;
-        }
-        .ingredients li,.steps li {
-            margin-left:20px;
-            margin-bottom:8px;
-            line-height:1.6;
-        }
-        /*新增菜谱表单*/
-        .form-item{
             margin-bottom:12px;
         }
-        .form-item label{
-            display:block;
-            margin-bottom:4px;
-            font-size:14px;
+        .section-title {
+            font-size:17px;
+            margin:20px 0 10px;
+            color:#ff6b35;
+            font-weight:600;
         }
-        .form-item input,.form-item select,.form-item textarea{
-            width:100%;
-            border:1px solid #ddd;
-            border-radius:8px;
-            padding:10px;
-            font-size:14px;
-        }
-        .form-item textarea{
-            min-height:80px;
-        }
-        .submit-btn{
-            width:100%;
-            background:#ff6b35;
-            color:#fff;
-            border:none;
-            padding:12px;
-            border-radius:8px;
-            font-size:16px;
-            margin-top:10px;
-        }
-        footer {
-            position:fixed;
-            bottom:0;
-            left:0;
-            right:0;
-            background:#fff;
-            display:flex;
-            border-top:1px solid #eee;
-        }
-        .footer-item {
-            flex:1;
-            text-align:center;
-            padding:10px 0;
-            font-size:13px;
+        .ingredients li,.steps li {
+            margin-left:22px;
+            margin-bottom:10px;
+            line-height:1.7;
+            font-size:15px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>自制菜谱大全</h1>
-        <button id="addBtn">+新增菜谱</button>
+        <button id="resetBtn">重置基础数据</button>
     </header>
 
     <div class="search-box">
@@ -238,46 +203,6 @@
         </div>
     </div>
 
-    <!-- 新增菜谱表单弹窗 -->
-    <div class="mask" id="formMask">
-        <div class="popup">
-            <button class="popup-close" id="formClose">×</button>
-            <h2 class="detail-title">新增菜谱</h2>
-            <div class="form-item">
-                <label>菜名</label>
-                <input type="text" id="f_title" placeholder="输入菜名">
-            </div>
-            <div class="form-item">
-                <label>分类</label>
-                <select id="f_category">
-                    <option value="家常菜">家常菜</option>
-                    <option value="汤品">汤品</option>
-                    <option value="凉拌">凉拌</option>
-                </select>
-            </div>
-            <div class="form-item">
-                <label>简短描述</label>
-                <input type="text" id="f_desc" placeholder="简单介绍这道菜">
-            </div>
-            <div class="form-item">
-                <label>食材（逗号分隔）</label>
-                <textarea id="f_ing" placeholder="例如：番茄2个,鸡蛋3个,盐"></textarea>
-            </div>
-            <div class="form-item">
-                <label>制作步骤（换行分隔）</label>
-                <textarea id="f_step" placeholder="每一行代表一个步骤"></textarea>
-            </div>
-            <button class="submit-btn" id="submitForm">保存菜谱</button>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-item">🏠首页</div>
-        <div class="footer-item">❤️收藏</div>
-        <div class="footer-item">📖分类</div>
-        <div class="footer-item">👤我的</div>
-    </footer>
-
 <script>
 let recipeList = [];
 
@@ -288,17 +213,7 @@ const popTitle = document.getElementById("popTitle");
 const popIngredient = document.getElementById("popIngredient");
 const popStep = document.getElementById("popStep");
 
-const formMask = document.getElementById("formMask");
-const formClose = document.getElementById("formClose");
-const addBtn = document.getElementById("addBtn");
-const submitForm = document.getElementById("submitForm");
-
-const f_title = document.getElementById("f_title");
-const f_category = document.getElementById("f_category");
-const f_desc = document.getElementById("f_desc");
-const f_ing = document.getElementById("f_ing");
-const f_step = document.getElementById("f_step");
-
+const resetBtn = document.getElementById("resetBtn");
 const searchInput = document.getElementById("searchInput");
 let currentCat = "全部";
 
@@ -319,14 +234,16 @@ function render(){
     }
     wrapDom.innerHTML = "";
     if(arr.length === 0){
-        wrapDom.innerHTML = `<div class="empty-tip">没有找到菜谱</div>`;
+        wrapDom.innerHTML = `<div class="empty-tip">没有找到相关菜谱</div>`;
         return;
     }
     arr.forEach(item=>{
         const div = document.createElement("div");
         div.className = "recipe-card";
         div.innerHTML = `
-            <div class="card-img">🍳</div>
+            <div class="card-img">
+                <img src="${item.cover}" alt="${item.title}">
+            </div>
             <div class="card-body">
                 <div class="card-title">${item.title}</div>
                 <div class="card-desc">${item.desc}</div>
@@ -355,39 +272,16 @@ function openDetail(info){
     detailMask.style.display = "block";
 }
 
-//打开新增表单
-addBtn.onclick = ()=>{
-    f_title.value = "";
-    f_category.value = "家常菜";
-    f_desc.value = "";
-    f_ing.value = "";
-    f_step.value = "";
-    formMask.style.display = "block";
-}
-
-//提交新增菜谱
-submitForm.onclick = ()=>{
-    const title = f_title.value.trim();
-    const category = f_category.value;
-    const desc = f_desc.value.trim();
-    const ingStr = f_ing.value.trim();
-    const stepStr = f_step.value.trim();
-    if(!title || !ingStr || !stepStr){
-        alert("菜名、食材、步骤不能为空");
-        return;
+//重置按钮：清除本地存储，重新拉取远程recipe.json
+resetBtn.onclick = function(){
+    if(confirm("确定重置？将重新加载远程基础菜谱数据！")){
+        localStorage.removeItem("cookBook");
+        initData();
     }
-    const ingredients = ingStr.split(/[,，]/).map(s=>s.trim()).filter(s=>s);
-    const steps = stepStr.split(/\n/).map(s=>s.trim()).filter(s=>s);
-    const newItem = {title,category,desc,ingredients,steps};
-    recipeList.push(newItem);
-    saveStorage();
-    formMask.style.display = "none";
-    render();
 }
 
 //关闭弹窗
 detailClose.onclick = ()=> detailMask.style.display = "none";
-formClose.onclick = ()=> formMask.style.display = "none";
 document.querySelectorAll(".mask").forEach(mask=>{
     mask.onclick = e=>{
         if(e.target === mask) mask.style.display = "none";
@@ -407,7 +301,7 @@ document.querySelectorAll(".tag-item").forEach(tag=>{
 //搜索输入监听
 searchInput.oninput = render;
 
-//初始化：优先读取本地存储，没有则拉取OSS上recipe.json
+//初始化：优先读取本地存储，没有则拉取远程 recipe.json（兼容GitHub Pages / OSS）
 async function initData(){
     const local = localStorage.getItem("cookBook");
     if(local){
@@ -416,13 +310,12 @@ async function initData(){
         return;
     }
     try{
-        //请求OSS上独立的json文件，同bucket直接写 /recipe.json
         const res = await fetch("./recipe.json");
         recipeList = await res.json();
         saveStorage();
         render();
     }catch(err){
-        wrapDom.innerHTML = `<div class="empty-tip">加载菜谱数据失败</div>`;
+        wrapDom.innerHTML = `<div class="empty-tip">加载菜谱数据失败，请检查recipe.json文件</div>`;
         console.error(err);
     }
 }
